@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Courses
+{% endblock %}
+
+{% block main %}
+    <h6>Show all informations of viva of a course by selecting it</h6>
+    <br>
+    <form action="/schedule" method="post">
+        <div class="form-group">
+            <select class="form-control" name="course" autofocus>
+                <option disabled selected value="">Course</option>
+                {% for row in courses %}
+                    <option value="{{ row.course }}">{{ row.course }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Select</button>
+    </form>
+{% endblock %}

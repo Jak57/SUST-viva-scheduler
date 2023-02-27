@@ -1,0 +1,305 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Undergraduate Program
+{% endblock %}
+
+{% block main %}
+    <h5>Department of Computer Science and Engineering, SUST</h5>
+    <h6>Undergraduate Program</h6>
+    <h6>Curriculum</h6>
+    <br>
+    <h5>First Year: 1st Semester</h5>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course No.</th>
+                <th>Course Title</th>
+                <th>Theory</th>
+                <th>Lab</th>
+                <th>Credits</th>
+                <th>Prerequisite</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in semester_1 %}
+                <tr>
+                    <td>{{ course }}</td>
+                    <td>{{ semester_1[course][0] }}</td>
+                    <td>{{ semester_1[course][1] }}</td>
+                    <td>{{ semester_1[course][2] }}</td>
+                    <td>{{ semester_1[course][3] }}</td>
+                    <td>{{ semester_1[course][4] }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>14</td>
+                <td>11</td>
+                <td>19.5</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <br>
+    <h5>First Year: 2nd Semester</h5>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course No.</th>
+                <th>Course Title</th>
+                <th>Theory</th>
+                <th>Lab</th>
+                <th>Credits</th>
+                <th>Prerequisite</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in semester_2 %}
+                <tr>
+                    <td>{{ course }}</td>
+                    <td>{{ semester_2[course][0] }}</td>
+                    <td>{{ semester_2[course][1] }}</td>
+                    <td>{{ semester_2[course][2] }}</td>
+                    <td>{{ semester_2[course][3] }}</td>
+                    <td>{{ semester_2[course][4] }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>12</td>
+                <td>14</td>
+                <td>19</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <br>
+    <h5>Second Year: 1st Semester</h5>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course No.</th>
+                <th>Course Title</th>
+                <th>Theory</th>
+                <th>Lab</th>
+                <th>Credits</th>
+                <th>Prerequisite</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in semester_3 %}
+                <tr>
+                    <td>{{ course }}</td>
+                    <td>{{ semester_3[course][0] }}</td>
+                    <td>{{ semester_3[course][1] }}</td>
+                    <td>{{ semester_3[course][2] }}</td>
+                    <td>{{ semester_3[course][3] }}</td>
+                    <td>{{ semester_3[course][4] }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>15</td>
+                <td>11</td>
+                <td>20.5</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <br>
+    <h5>Second Year: 2nd Semester</h5>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course No.</th>
+                <th>Course Title</th>
+                <th>Theory</th>
+                <th>Lab</th>
+                <th>Credits</th>
+                <th>Prerequisite</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in semester_4 %}
+                <tr>
+                    <td>{{ course }}</td>
+                    <td>{{ semester_4[course][0] }}</td>
+                    <td>{{ semester_4[course][1] }}</td>
+                    <td>{{ semester_4[course][2] }}</td>
+                    <td>{{ semester_4[course][3] }}</td>
+                    <td>{{ semester_4[course][4] }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>16</td>
+                <td>12</td>
+                <td>22.0</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <br>
+    <h5>Third Year: 1st Semester</h5>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course No.</th>
+                <th>Course Title</th>
+                <th>Theory</th>
+                <th>Lab</th>
+                <th>Credits</th>
+                <th>Prerequisite</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in semester_5 %}
+                <tr>
+                    <td>{{ course }}</td>
+                    <td>{{ semester_5[course][0] }}</td>
+                    <td>{{ semester_5[course][1] }}</td>
+                    <td>{{ semester_5[course][2] }}</td>
+                    <td>{{ semester_5[course][3] }}</td>
+                    <td>{{ semester_5[course][4] }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>14</td>
+                <td>15</td>
+                <td>21.5</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <br>
+    <h5>Third Year: 2nd Semester</h5>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course No.</th>
+                <th>Course Title</th>
+                <th>Theory</th>
+                <th>Lab</th>
+                <th>Credits</th>
+                <th>Prerequisite</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in semester_6 %}
+                <tr>
+                    <td>{{ course }}</td>
+                    <td>{{ semester_6[course][0] }}</td>
+                    <td>{{ semester_6[course][1] }}</td>
+                    <td>{{ semester_6[course][2] }}</td>
+                    <td>{{ semester_6[course][3] }}</td>
+                    <td>{{ semester_6[course][4] }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>14</td>
+                <td>20</td>
+                <td>24.0</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <br>
+    <h5>Fourth Year: 1st Semester</h5>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course No.</th>
+                <th>Course Title</th>
+                <th>Theory</th>
+                <th>Lab</th>
+                <th>Credits</th>
+                <th>Prerequisite</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in semester_7 %}
+                <tr>
+                    <td>{{ course }}</td>
+                    <td>{{ semester_7[course][0] }}</td>
+                    <td>{{ semester_7[course][1] }}</td>
+                    <td>{{ semester_7[course][2] }}</td>
+                    <td>{{ semester_7[course][3] }}</td>
+                    <td>{{ semester_7[course][4] }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>9</td>
+                <td>17</td>
+                <td>17.5</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <br>
+    <h5>Fourth Year: 2nd Semester</h5>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course No.</th>
+                <th>Course Title</th>
+                <th>Theory</th>
+                <th>Lab</th>
+                <th>Credits</th>
+                <th>Prerequisite</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in semester_8 %}
+                <tr>
+                    <td>{{ course }}</td>
+                    <td>{{ semester_8[course][0] }}</td>
+                    <td>{{ semester_8[course][1] }}</td>
+                    <td>{{ semester_8[course][2] }}</td>
+                    <td>{{ semester_8[course][3] }}</td>
+                    <td>{{ semester_8[course][4] }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td>6</td>
+                <td>16</td>
+                <td>14.0</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

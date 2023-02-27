@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Faculty
+{% endblock %}
+
+{% block main %}
+    <h5>Department of Computer Science and Engineering, SUST</h5>
+    <h6>Short Faculty Portfolio</h6>
+    <br>
+    <p>For more informations visit <a href="https://www.sust.edu/d/cse/faculty/4">Faculty, CSE, SUST</a></p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for name in faculty %}
+                <tr>
+                    <td>{{ name }}</td>
+                    <td>{{ faculty[name][0] }}</td>
+                    <td>{{ faculty[name][1] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <h6>Show history of viva of a course by selecting it</h6>
+    <br>
+    <form action="/history" method="post">
+        <div class="form-group">
+            <select class="form-control" name="course" autofocus>
+                <option disabled selected value="">Course</option>
+                {% for row in courses %}
+                    <option value="{{ row.course }}">{{ row.course }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}

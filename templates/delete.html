@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delete
+{% endblock %}
+
+{% block main %}
+    <h6>Delete scheduled viva by selecting it</h6>
+    <br>
+    <form action="/delete" method="post">
+        <div class="form-group">
+            <select class="form-control" name="course" autofocus>
+                <option disabled selected value="">Course</option>
+                {% for course in scheduled_courses %}
+                    <option value="{{ course }}">{{ course }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Delete</button>
+    </form>
+{% endblock %}

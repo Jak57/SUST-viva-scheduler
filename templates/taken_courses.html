@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Courses
+{% endblock %}
+
+{% block main %}
+    <h6>My registered courses for viva</h6>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Teacher</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in courses %}
+                <tr>
+                    <td>{{ row.course }}</td>
+                    <td>{{ row.teacher }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
