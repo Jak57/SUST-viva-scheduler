@@ -33,7 +33,7 @@ This web application, **SUST Viva Scheduler**, allows users to schedule viva and
 
 <img src="images/register.png">
 
-* If the user is a teacher, they can view all the courses they have created in the **My Course** section and if the user is a student they can view all the courses they have registered for appearing in viva.
+* If the user is a teacher, he can view all the courses they have created in the **My Course** section and if the user is a student they can view all the courses they have registered for appearing in viva.
 
 <img src="images/t_course.png">
 
