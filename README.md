@@ -41,7 +41,7 @@ This web application, **SUST Viva Scheduler**, allows users to schedule viva and
 
 <img src="images/create.png">
 
-* Teachers can **update the status of students** in the time of viva and can view relevant information.
+* Teachers can **update the status of students** at the time of viva and can view relevant information.
 
 <img src="images/schedule.png">
 
