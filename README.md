@@ -21,7 +21,7 @@ This web application, **SUST Viva Scheduler**, allows users to schedule viva and
 
 <img src="images/home.png">
 
-* **Curriculum** selection allows users to view complete curriculum at CSE, SUST
+* **Curriculum** section allows users to view complete curriculum at CSE, SUST
 
 <img src="images/curriculum.png">
 
